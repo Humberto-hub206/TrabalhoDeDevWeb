@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+a[href^="http://"] {
+  color: red;
+}
+
+a[href^="http://"]::after {
+  content: " ⚠";
+}
+
+a[href$=".pdf"] {
+  color: orange;
+}
+
+a[href$=".pdf"]::after {
+  content: " [PDF]";
+}
+
+a[href^="#"] {
+  color: gray;
+  font-style: italic;
+}
+
+a[target="_blank"]::after {
+  content: " ↗";
+}
+
+
+#sec-estrutural li:first-child {
+  font-weight: bold;
+}
+
+#sec-estrutural li:last-child {
+  color: #8e44ad;
+}
+
+#sec-estrutural li:nth-child(even) {
+  background-color: #dfe6e9;
+}
+
+#sec-estrutural li:nth-child(odd) {
+  background-color: #f1f2f6;
+}
+
+#sec-estrutural li:nth-child(3) {
+  border-left: 5px solid #0984e3;
+  padding-left: 0.5rem;
+}
+
+
+form {
+  display: inline-block;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 3px solid #74b9ff;
+  outline-offset: 2px;
+}
+
+input:disabled {
+  background-color: #dcdde1;
+  cursor: not-allowed;
+}
+
+input:required {
+  border-left: 4px solid #0984e3;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.checkbox-area {
+  margin-top: 1rem;
+}
+
+.checkbox-area input {
+  width: auto;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: #0984e3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0652dd;
+}
+
+
+.citacao::before {
+  content: "“";
+  font-size: 2rem;
+  color: #e17055;
+}
+
+.citacao::after {
+  content: "”";
+  font-size: 2rem;
+  color: #e17055;
+}
+
+.obrigatorio::after {
+  content: " *";
+  color: red;
+}
+
+::selection {
+  background-color: #2d3436;
+  color: #ffffff;
+}
+
+.input-custom::placeholder {
+  color: #636e72;
+  font-style: italic;
+}
+
+h3 + p {
+  font-size: 1.1rem;
+  color: #0984e3;
+}
+
+#sec-combinadores li:not(.ativo) {
+  opacity: 0.5;
+}
+
+#sec-combinadores li.ativo {
+  font-weight: bold;
+}
+
+#sec-combinadores li.ativo::before {
+  content: "✔ ";
+  color: green;
+}
