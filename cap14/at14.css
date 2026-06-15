@@ -1,0 +1,194 @@
+/* RESET BÁSICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+}
+
+/* SEÇÕES */
+
+section {
+    background-color: white;
+
+    padding: 20px;
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* IMAGEM */
+
+img {
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+/* BOTÕES */
+
+button {
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    margin: 5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    background-color: #1d4ed8;
+}
+
+/* INPUTS */
+
+input,
+select {
+    padding: 8px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+/* PERFIL DESTACADO */
+
+.perfil-destaque {
+    border: 3px solid gold;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    background-color: #fff9db;
+}
+
+/* ===================== */
+/* TEMA CLARO */
+/* ===================== */
+
+.tema-claro {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.tema-claro section {
+    background-color: white;
+    color: #222;
+}
+
+/* ===================== */
+/* TEMA ESCURO */
+/* ===================== */
+
+.tema-escuro {
+    background-color: #1f2937;
+    color: white;
+}
+
+.tema-escuro section {
+    background-color: #334155;
+    color: white;
+}
+
+.tema-escuro input,
+.tema-escuro select {
+    background-color: #475569;
+    color: white;
+    border: 1px solid #64748b;
+}
+
+.tema-escuro button {
+    background-color: #0f172a;
+    color: white;
+}
+
+.tema-escuro button:hover {
+    background-color: #1e293b;
+}
+
+/* ===================== */
+/* TEMA AZUL */
+/* ===================== */
+
+.tema-azul {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+}
+
+.tema-azul section {
+    background-color: white;
+    color: #1e3a8a;
+}
+
+.tema-azul button {
+    background-color: #2563eb;
+}
+
+.tema-azul button:hover {
+    background-color: #1d4ed8;
+}
+
+/* LINHAS */
+
+hr {
+    margin: 20px 0;
+}
+
+/* FORMULÁRIO */
+
+form div {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    img {
+        width: 150px;
+    }
+}
